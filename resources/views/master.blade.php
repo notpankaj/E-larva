@@ -14,7 +14,7 @@
 <body>
    {{ View::make('header') }}
    @yield('content')
-   {{ View::make('footer') }}
+   {{ View::make('footer') }} 
 </body>
 <script>
    // $(document).ready(function(){
@@ -28,5 +28,31 @@
    .custome-login{
       min-height: 88vh;
       padding-top: 15rem; 
+   }
+   .slider-img {
+      width: 100%;
+      height: 400px !important;
+      object-fit: cover;   
+   }
+   .trending {
+      display: flex;
+      flex-direction: column;
+   }
+   .trending-wrapper{
+      margin: 30px;
+   }
+   .trending-item {
+    float: left;
+    width: 20%;
+   }
+   .trending-img {
+      height: 100px;
+      object-fit: contain; 
+   }
+   .detail-img{
+      height: 200px;
+   }
+   .search-box{
+      width: 320px !important;
    }
 </style>
